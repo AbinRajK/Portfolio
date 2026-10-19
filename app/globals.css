@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+/* Dark is the default. html.light below swaps these values. */
+:root {
+  --background: #09090b;
+  --foreground: #f4f4f5;
+
+  --z-50: #fafafa;
+  --z-100: #f4f4f5;
+  --z-200: #e4e4e7;
+  --z-300: #d4d4d8;
+  --z-400: #9f9fa9;
+  --z-500: #71717b;
+  --z-600: #52525c;
+  --z-700: #3f3f46;
+  --z-800: #27272a;
+  --z-900: #18181b;
+  --z-950: #09090b;
+
+  --accent: #34d399;
+}
+
+html.light {
+  color-scheme: light;
+
+  --background: #fafafa;
+  --foreground: #18181b;
+
+  --z-50: #09090b;
+  --z-100: #18181b;
+  --z-200: #27272a;
+  --z-300: #3f3f46;
+  --z-400: #52525c;
+  --z-500: #71717b;
+  --z-600: #9f9fa9;
+  --z-700: #d4d4d8;
+  --z-800: #e4e4e7;
+  --z-900: #f4f4f5;
+  --z-950: #fafafa;
+
+  --accent: #059669;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+
+  /* Every existing zinc-* / emerald-400 class now follows the theme */
+  --color-zinc-50: var(--z-50);
+  --color-zinc-100: var(--z-100);
+  --color-zinc-200: var(--z-200);
+  --color-zinc-300: var(--z-300);
+  --color-zinc-400: var(--z-400);
+  --color-zinc-500: var(--z-500);
+  --color-zinc-600: var(--z-600);
+  --color-zinc-700: var(--z-700);
+  --color-zinc-800: var(--z-800);
+  --color-zinc-900: var(--z-900);
+  --color-zinc-950: var(--z-950);
+  --color-emerald-400: var(--accent);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Custom typing cursor keyframe for Tailwind v4 */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-start infinite;
+}
