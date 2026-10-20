@@ -52,7 +52,7 @@ export default function Skills() {
         technologies
       </h2>
 
-      <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 md:flex md:flex-wrap md:gap-2">
+      <div className="grid justify-between grid-cols-3 sm:grid-cols-4 gap-3 md:grid-cols-[repeat(5,72px)] md:gap-2 lg:grid-cols-[repeat(10,72px)]">
         {skills.map(({ name, icon: Icon, color }) => (
           <div
             key={name}
