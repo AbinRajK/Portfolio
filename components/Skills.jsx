@@ -11,9 +11,14 @@ import {
   SiGraphql,
   SiApollographql,
   SiMongodb,
+  SiRedis,
+  SiSocketdotio,
   SiJsonwebtokens,
   SiRabbitmq,
   SiNginx,
+  SiDocker,
+  SiKubernetes,
+  SiGithubactions,
 } from 'react-icons/si';
 
 // Simple text mark for tools that have no official logo in the icon set
@@ -36,13 +41,18 @@ const skills = [
   { name: 'graphql', icon: SiGraphql, color: '#E10098' },
   { name: 'apollo', icon: SiApollographql, color: '#E4E4E7' },
   { name: 'mongodb', icon: SiMongodb, color: '#47A248' },
+  { name: 'redis', icon: SiRedis, color: '#FF4438' },
+  { name: 'socket.io', icon: SiSocketdotio, color: '#E4E4E7' },
   { name: 'jwt', icon: SiJsonwebtokens, color: '#D63AFF' },
   { name: 'rabbitmq', icon: SiRabbitmq, color: '#FF6600' },
   { name: 'nginx', icon: SiNginx, color: '#009639' },
   { name: 'nameko', icon: () => <Monogram letter="N" />, color: '#34D399' },
   { name: 'nodeshift', icon: () => <Monogram letter="NS" />, color: '#34D399' },
+  { name: 'docker', icon: SiDocker, color: '#2496ED' },
+  { name: 'kubernetes', icon: SiKubernetes, color: '#326CE5' },
   { name: 'git', icon: FaGitAlt, color: '#F05032' },
   { name: 'github', icon: FaGithub, color: '#E4E4E7' },
+  { name: 'actions', icon: SiGithubactions, color: '#2088FF' },
 ];
 
 export default function Skills() {
