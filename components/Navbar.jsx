@@ -113,14 +113,14 @@ export default function Navbar() {
       <div
         onClick={() => setOpen(false)}
         aria-hidden="true"
-        className={`md:hidden fixed inset-0 z-[55] bg-black/60 transition-opacity duration-200 ${
+        className={`md:hidden fixed inset-0 z-55 bg-black/60 transition-opacity duration-200 ${
           open ? 'opacity-100' : 'pointer-events-none opacity-0'
         }`}
       />
 
       <aside
         id="mobile-sidebar"
-        className={`md:hidden fixed right-0 top-0 z-[60] flex h-full w-64 flex-col border-l border-zinc-800 bg-zinc-950 px-6 py-3 font-mono text-sm transition-transform duration-200 ${
+        className={`md:hidden fixed right-0 top-0 z-60 flex h-full w-64 flex-col border-l border-zinc-800 bg-zinc-950 px-6 py-3 font-mono text-sm transition-transform duration-200 ${
           open ? 'translate-x-0' : 'invisible translate-x-full'
         }`}
       >

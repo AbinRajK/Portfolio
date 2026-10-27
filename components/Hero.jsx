@@ -11,7 +11,7 @@ const chakraPetch = Chakra_Petch({
 const roles = ['Full-Stack Developer', 'Next.js specialist', 'React.js Developer', 'MERN Stack Developer'];
 
 // Tweak these to taste
-const TYPE_SPEED = 15;          // characters per second while typing
+const TYPE_SPEED = 3;          // characters per second while typing
 const DELETE_SPEED = 15;        // characters per second while deleting
 const HOLD_AFTER_TYPE = 1400;   // ms pause on a fully typed role
 const HOLD_AFTER_DELETE = 350;  // ms pause on empty before next role
